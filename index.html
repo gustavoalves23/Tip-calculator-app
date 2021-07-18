@@ -18,10 +18,25 @@
   <main class="main">
     <section class="input-section">
       <div class="bill-input-div">
-        <label class="input" for="bill-input">Bill</label>
-        <input type="number" id="bill-input" dir="rtl">
+        <label class="input-label" for="bill-input">Bill</label>
+        <input type="number" class="input" name="bill-value" id="bill-input" dir="rtl">
       </div>
-      <div class="tip-input"></div>
+      <div class="tip-input-div">
+        <label class="input-label" for="tip-input">Select Tip %</label>
+        <div id="tip-options">
+          <input type="radio" class="tip-input" name="tip-value" id="5%" value="5%" checked>
+          <label class="radio-label" for="5%">5%</label>
+          <input type="radio" class="tip-input" name="tip-value" id="10%" value="10%">
+          <label class="radio-label" for="10%">10%</label>
+          <input type="radio" class="tip-input" name="tip-value" id="15%" value="15%">
+          <label class="radio-label" for="15%">15%</label>
+          <input type="radio" class="tip-input" name="tip-value" id="25%" value="25%">
+          <label class="radio-label" for="25%">25%</label>
+          <input type="radio" class="tip-input" name="tip-value" id="50%" value="50%">
+          <label class="radio-label" for="50%">50%</label>
+          <input type="number" name="custom-value-tip" id="custom-value-tip" dir="rtl" placeholder="Custom">
+        </div>
+      </div>
       <div class="people-input"></div>
     </section>
     <section class="output-section"></section>

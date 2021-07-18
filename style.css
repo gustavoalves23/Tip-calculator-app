@@ -32,7 +32,7 @@ main {
     padding: 40px;
   }
 
-  .input {
+  .input-label {
     font-size: 18px;
     color: hsl(186, 14%, 43%);
     margin-bottom: 5px;
@@ -49,21 +49,87 @@ main {
   .bill-input-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
-  #bill-input {
+  .input {
     text-indent: 17px;
     height: 50px;
     background-color: hsl(180, 22%, 93%);
     border: none;
     border-radius: 7px;
-    background-image: url(./images/icon-dollar.svg);
-    background-repeat: no-repeat;
-    background-position: 15px 15px;
     font-size: 24px;
     caret-color: transparent;
     color: hsl(183, 100%, 15%);
     font-weight: bold;
+    outline: none;
   }
 
+  .input:focus {
+    background-color: hsl(185, 41%, 84%);
+  }
+
+  #bill-input {
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+  }
+
+  .tip-input-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .tip-input:checked + label {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+
+  }
+
+  #tip-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .radio-label {
+    font-size: 24px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    flex-basis: 35%;
+    flex-grow: 1;
+    text-align: center;
+    margin: 7px;
+    border-radius: 7px;
+    padding: 6px 0;
+  }
+
+  #custom-value-tip {
+    flex-basis: 35%;
+    flex-grow: 1;
+    margin: 7px;
+    overflow: hidden;
+    text-indent: 17px;
+    caret-color: transparent;
+    font-size: 24px;
+    border: none;
+    background-color: hsl(180, 22%, 93%);
+    border-radius: 7px;
+    color: hsl(186, 14%, 43%);
+    outline: none;
+  }
+
+  #custom-value-tip:focus {
+    background-color: hsl(185, 41%, 84%);
+  }
+
+  #custom-value-tip::placeholder {
+    color: hsl(186, 14%, 43%);
+    opacity: 1;
+  }
 }
