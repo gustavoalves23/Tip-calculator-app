@@ -34,7 +34,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-@media screen and (max-width:828px) {
+@media screen and (max-width:883px) {
 
   .logo-div {
     margin: 40px;
@@ -188,7 +188,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media screen and (min-width:828px) {
+@media screen and (min-width:883px) {
 
   .logo-div {
     margin: 80px;
@@ -203,7 +203,7 @@ input::-webkit-inner-spin-button {
   }
 
   main {
-    width: 1000px;
+    max-width: 1000px;
     border-radius: 30px;
     padding: 40px;
     display: flex;
