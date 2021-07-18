@@ -78,6 +78,7 @@ main {
   .tip-input-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   input[type=radio] {
@@ -131,5 +132,16 @@ main {
   #custom-value-tip::placeholder {
     color: hsl(186, 14%, 43%);
     opacity: 1;
+  }
+
+  .people-input-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #people-input {
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
   }
 }
